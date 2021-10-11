@@ -1,0 +1,35 @@
+@import "../../sass/color";
+
+.component-topbar {
+  background-color: $primary;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+
+  .wrap-topbar {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      height: 50px;
+    }
+
+    .button-back {
+      height: 100%;
+      padding: 0 16px;
+    }
+
+    .icon-back {
+      height: 24px;
+    }
+
+    .title {
+      color: $white;
+      width: 100%;
+      margin-left: 16px;
+      font-size: 24px;
+    }
+  }
+}
