@@ -1,44 +1,46 @@
 @import "../../sass/color";
 
 .page-home {
-  .container {
-    text-align: center;
-  }
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
-  .logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
+  .wrap-item {
+    border-bottom: $border solid 2px;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
-  @media (prefers-reduced-motion: no-preference) {
-    .logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-
-  .header {
-    background-color: $background;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: $white;
-  }
-
-  .link {
-    color: $blue;
-    text-decoration: underline;
-  }
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
+    .title {
+      font-weight: bold;
+      font-size: 20px;
     }
 
-    to {
-      transform: rotate(360deg);
+    .wrap-desc {
+      margin: 8px 0;
+
+      .desc {
+        font-size: 14px;
+        margin: 4px 0;
+      }
+    }
+
+    .wrap-price {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .desc {
+        font-size: 16px;
+        margin-top: 4px;
+      }
     }
   }
 }

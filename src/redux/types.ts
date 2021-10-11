@@ -1,6 +1,7 @@
 // actions
 interface Payload {
   data?: any;
+  loadMore?: Boolean;
 }
 
 interface Params {
@@ -25,4 +26,6 @@ export interface Reducers {
 export interface HomeState {
   list: any[];
   isLoading: Boolean;
+  limit: Number;
+  loadMore: Boolean;
 }

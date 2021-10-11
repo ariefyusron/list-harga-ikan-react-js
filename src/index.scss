@@ -1,5 +1,6 @@
 // sass-lint:disable indentation
 @import "./sass/size";
+@import "./sass/color";
 
 body {
   margin: 0;
@@ -10,10 +11,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
+  background-color: $background;
 
   #root {
     width: 100%;
     max-width: $max-width;
+    background-color: $white;
+    min-height: 100vh;
   }
 }
 

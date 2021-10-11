@@ -7,7 +7,8 @@ const host = axios.create({
 // type body
 
 const api = {
-  getData: () => host.get("list"),
+  getData: (limit: Number, offset: Number) =>
+    host.get(`list?limit=${limit}&offset=${offset}`),
 };
 
 export default api;
