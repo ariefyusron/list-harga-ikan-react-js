@@ -1,4 +1,5 @@
 @import "../../sass/color";
+@import "../../sass/size";
 
 .component-topbar {
   background-color: $primary;
@@ -7,10 +8,11 @@
   justify-content: center;
   position: fixed;
   width: 100%;
+  left: 0;
 
   .wrap-topbar {
     width: 100%;
-    max-width: 480px;
+    max-width: $max-width;
     height: 100%;
     display: flex;
     align-items: center;
