@@ -7,7 +7,7 @@ const host = axios.create({
 // type body
 
 const api = {
-  getSeasons: () => host.get("seasons"),
+  getData: () => host.get("list"),
 };
 
 export default api;
