@@ -2,6 +2,7 @@
 interface Payload {
   data?: any;
   loadMore?: Boolean;
+  isSearch?: Boolean;
 }
 
 interface Params {

@@ -11,7 +11,12 @@ const initialState: HomeState = {
 export default (state = initialState, { type, payload }: Action) => {
   switch (type) {
     case GET_DATA_PENDING:
-      return { ...state, isLoading: true, loadMore: true };
+      return {
+        ...state,
+        isLoading: true,
+        loadMore: true,
+        list: payload.isSearch ? initialState.list : state.list,
+      };
     case GET_DATA_SUCCESS:
       return {
         ...state,

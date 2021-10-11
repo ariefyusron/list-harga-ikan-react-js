@@ -1,45 +1,74 @@
 @import "../../sass/color";
+@import "../../sass/size";
+
+$height-search: 56px;
 
 .page-home {
-  padding: 0 16px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  .wrap-search {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: $white;
+    position: fixed;
+    width: 100%;
+    max-width: $max-width;
+    height: $height-search;
+    top: 60px;
 
-  .wrap-item {
-    border-bottom: $border solid 2px;
-    padding: 8px;
+    input {
+      width: 70%;
+    }
+
+    select {
+      width: 25%;
+    }
+  }
+
+  .content-home {
+    margin-top: $height-search;
+    padding: 0 16px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    .title {
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .wrap-desc {
-      margin: 8px 0;
-
-      .desc {
-        font-size: 14px;
-        margin: 4px 0;
-      }
-    }
-
-    .wrap-price {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 16px;
+    .wrap-item {
+      border-bottom: $border solid 2px;
+      padding: 8px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
 
       .title {
-        font-size: 14px;
         font-weight: bold;
+        font-size: 20px;
       }
 
-      .desc {
-        font-size: 16px;
-        margin-top: 4px;
+      .wrap-desc {
+        margin: 8px 0;
+
+        .desc {
+          font-size: 14px;
+          margin: 4px 0;
+        }
+      }
+
+      .wrap-price {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+
+        .title {
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .desc {
+          font-size: 16px;
+          margin-top: 4px;
+        }
       }
     }
   }
