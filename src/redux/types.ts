@@ -1,8 +1,8 @@
 // actions
 interface Payload {
   data?: any;
-  loadMore?: Boolean;
-  isSearch?: Boolean;
+  loadMore?: boolean;
+  isSearch?: boolean;
 }
 
 interface Params {
@@ -26,7 +26,16 @@ export interface Reducers {
 // reducers
 export interface HomeState {
   list: any[];
-  isLoading: Boolean;
-  limit: Number;
-  loadMore: Boolean;
+  isLoading: boolean;
+  limit: number;
+  loadMore: boolean;
+  area: {
+    isLoading: boolean;
+    list: any[];
+  };
+  size: {
+    isLoading: boolean;
+    list: any[];
+  };
+  isLoadingCreate: boolean;
 }
